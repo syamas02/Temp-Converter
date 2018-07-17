@@ -6,7 +6,10 @@ describe('Temp Converter', () => {
   it('exists', () => {
     expect(tempConvert).to.be.ok;
   });
-  it('converting to F works', () => {
+  it('converting to F from C works', () => {
     expect(converttoFfromC(0)).to.equal(32);
+  });
+  it('converting to C from F works', () => {
+    expect(converttoCfromF(32)).to.equal(0);
   });
 });
